@@ -1,1 +1,814 @@
 
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+
+    :root {
+      --blackcolor: #333;
+      --blacktrans: rgba(255, 255, 255, 0.1);
+      --supertrans: rgba(255, 255, 255, 0);
+      --darkgraycolor: #555;
+      --whitecolor: #eee;
+      --offwhitecolor: #ccc;
+      --graycolor: #aaa;
+      --redcolor: #fc521f;
+      --beigecolor: #ead1ae;
+      --inWid: 100%;
+      --inHeight: 100svh;
+      --fontSizeSmall: 16px;
+    }
+
+    html {
+      background: linear-gradient(180deg, var(--blackcolor) 60%, var(--darkgraycolor));
+    }
+
+    .forhid,
+    body,
+    html {
+      height: var(--inHeight);
+      width: var(--inWid);
+      overflow: hidden;
+    }
+
+    .options,
+    #midashiS,
+    #search,
+    .standfm-embed-iframe,
+    #simozimoBox,
+    .notetitle,
+    #toptop,
+    #gameCircle,
+    #starPoint,
+    #searchIndex,
+    #searchKakutei,
+    #searchInput,
+    #loadingPart {
+      position: absolute;
+    }
+
+    #searchBox,
+    .noteThumbnail {
+      position: relative;
+    }
+
+    .Year,
+    .Month,
+    .notetitle {
+      top: 0;
+      left: 0;
+    }
+
+    #search,
+    #searchBox {
+      top: calc(var(--inHeight)/24);
+    }
+
+    #search,
+    #searchInput,
+    #simozimoBox {
+      left: calc(var(--inWid)/24);
+    }
+
+    #toptop,
+    .options,
+    #searchCnt {
+      user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+    }
+
+    .forHid,
+    #search,
+    #simozimoBox,
+    .tab_content,
+    #starPoint,
+    #toptop,
+    body::-webkit-scrollbar,
+    .scrollcontent::-webkit-scrollbar,
+    #searchIndex::-webkit-scrollbar,
+    #myInput::-webkit-scrollbar {
+      display: none;
+    }
+
+
+
+    .forHid.active {
+      display: block;
+      animation: appear .5s ease;
+    }
+
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .hiddenAnime {
+      transform: scale(0, 0);
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    #LINK a,
+    ul li,
+    .midashi,
+    .opValue,
+    .opValButton {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .btn,
+    button,
+    .youtubebox,
+    .options,
+    #LINK a,
+    #letsplay,
+    #roleplay,
+    #searchKakutei {
+      text-align: center;
+    }
+
+    #searchIndex,
+    #myInput,
+    .youtubebox a,
+    .Year button {
+      text-align: left;
+    }
+
+    select {
+      border-radius: 0px;
+      appearance: none;
+      text-align-last: center;
+    }
+
+
+    ul {
+      list-style-type: none;
+    }
+
+    body,
+    input,
+    select,
+    button,
+    ul,
+    .midashi,
+    #starPoint {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--whitecolor);
+      z-index: 0;
+
+    }
+
+    select,
+    a,
+    input,
+    button {
+      color: var(--whitecolor);
+      font-family: inherit;
+      border: none;
+      outline: none
+    }
+
+    .nosummaries,
+    #myInput,
+    #searchInput,
+    button,
+    select,
+    #tabs0,
+    #tabs1 {
+      background-color: transparent;
+    }
+
+    option,
+    .options,
+    #searchBox,
+    #simozimoBox,
+    #LINK a {
+      background-color: var(--whitecolor);
+    }
+
+    #search {
+      background-color: var(--offwhitecolor);
+    }
+
+    .opValue,
+    .opValButton {
+      box-shadow: 1px 1px 4px var(--darkgraycolor),
+        -1px -1px 2px var(--whitecolor);
+    }
+
+
+    .btn {
+      box-shadow: 1px 1px 2px var(--graycolor),
+        -1px -1px 2px white;
+    }
+
+
+    .summaries {
+      border-bottom: 1px solid var(--darkgraycolor);
+      color: var(--offwhitecolor);
+    }
+
+    .iframeButton,
+    #searchCancel,
+    #simozimoCancel {
+      box-shadow: inset 1px 1px 2px #111,
+        inset -1px -1px 2px var(--darkgraycolor);
+    }
+
+
+    #searchKakutei,
+    #letsplay {
+      box-shadow: inset 2px 2px 4px white,
+        inset -2px -2px 4px var(--graycolor);
+      background-color: var(--offwhitecolor);
+    }
+
+    #letterPopupBox,
+    #letterPopuped,
+    #LINK a {
+      box-shadow: 4px 4px 8px #111,
+        -2px -2px 4px var(--darkgraycolor);
+    }
+
+    #letterPopuped a {
+      box-shadow: inset 1px 1px 2px var(--darkgraycolor),
+        inset -1px -1px 2px var(--whitecolor);
+    }
+
+    #midashiS {
+      box-shadow: inset 1px 1px 2px #111,
+        inset -1px -1px 2px var(--darkgraycolor);
+    }
+
+    #myUL li:not(.dateClass) {
+      background-color: var(--blacktrans);
+    }
+
+    .radioclass:not(.iframeButton) {
+      box-shadow: 1px 1px 4px #111,
+        -1px -1px 2px var(--darkgraycolor);
+    }
+
+
+
+    #simozimoCancel {
+      background-color: var(--blackcolor);
+    }
+
+
+
+
+    #gameCircle {
+      background-color: var(--redcolor)
+    }
+
+    #LINK a:hover {
+      background-color: var(--redcolor) !important;
+    }
+
+    .Year {
+      background: linear-gradient(100deg, var(--whitecolor) 90%, var(--supertrans) 90%, var(--supertrans)) !important;
+    }
+
+    .Month {
+      background: linear-gradient(100deg, var(--supertrans) 61%, var(--offwhitecolor) 61%, var(--offwhitecolor)) !important;
+    }
+
+
+    #loadingPart {
+      background: conic-gradient(var(--supertrans) 50%, var(--redcolor)75%);
+      -webkit-mask-image: radial-gradient(transparent 0%,
+          transparent 60%,
+          #fff 60%,
+          #fff 100%);
+    }
+
+
+
+    .dateClass:hover,
+    .opValue:hover,
+    .radioclass:hover,
+    #myUL li a:hover .summaries,
+    #myUL li a:hover .radiotitle,
+    ul li a:hover,
+    .btn:hover,
+    #myInput:hover {
+      opacity: 0.8;
+    }
+
+
+
+    .options,
+    option,
+    select,
+    .radioclass,
+    .opValue,
+    .opValButton,
+    .dateClass button,
+    input,
+    #searchKakutei,
+    #letsplay {
+      color: var(--blackcolor);
+    }
+
+    #searchCnt {
+      color: var(--darkgraycolor);
+    }
+
+    .iframeButton {
+      color: var(--whitecolor);
+    }
+
+
+    #scores,
+    time {
+      color: var(--graycolor)
+    }
+
+    #starPoint {
+      color: gold;
+    }
+
+    .Year button {
+      color: var(--redcolor);
+    }
+
+    body,
+    #searchInput,
+    select {
+      font-size: var(--fontSizeSmall);
+    }
+
+
+    #scores,
+    time,
+    .summaries,
+    .radioclass,
+    #searchKakutei,
+    #roleplay,
+    #letsplay {
+      font-size: calc(var(--fontSizeSmall)*0.8);
+    }
+
+    #myUL li,
+    .opValue,
+    .dateClass button {
+      font-size: calc(var(--fontSizeSmall)*0.9);
+    }
+
+    .dateClass button {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .radioclass,
+    .opValButton,
+    #search,
+    #simozimoBox,
+    #simozimoCancel {
+      border-radius: 5px;
+    }
+
+    #myUL li:not(.dateClass),
+    .options,
+    #searchBox,
+    .opValue,
+    #roleplay,
+    #LINK a,
+    #midashiS {
+      border-radius: 10px;
+    }
+
+    #toptop,
+    #gameCircle,
+    #loadingPart {
+      border-radius: 50%;
+    }
+
+    .midashi:first-child,
+    .Year {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .midashi:last-child,
+    #letsplay,
+    #searchKakutei {
+      border-radius: 0 10px 10px 0;
+    }
+
+    .Year {
+      border-radius: 5px 0 0 5px;
+    }
+
+    .Month {
+      border-radius: 0 5px 5px 0;
+    }
+
+    #toptop,
+    #myUL li,
+    .notetitle {
+      z-index: 1;
+    }
+
+    #midashiS,
+    #gameCircle,
+    #simozimoBox,
+    .options,
+    #LINK a {
+      z-index: 2
+    }
+
+    #search,
+    #searchKakutei {
+      z-index: 3;
+    }
+
+    .scrollcontent,
+    #searchIndex {
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    #myInput {
+      overflow-y: hidden;
+    }
+
+    .forGrid,
+    .options,
+    #LINK {
+      display: grid;
+    }
+
+    .forGrid {
+      height: var(--inHeight);
+      grid-template-rows: repeat(24, calc(var(--inHeight)/24));
+      grid-template-columns: repeat(24, calc(var(--inWid)/24));
+    }
+
+    .scrollcontent {
+      grid-row: 2/18;
+      grid-column: 2/24;
+    }
+
+    #maps {
+      grid-row: 2/19;
+      grid-column: 2/24;
+    }
+
+    .options:not(.other) {
+      grid-template-columns: repeat(11, 1fr);
+
+      font-size: calc(var(--fontSizeSmall)*0.8);
+    }
+
+    #myInput {
+      width: 100%;
+      grid-column: 2/8;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    #searchCnt {
+      grid-column: 8;
+    }
+
+    .btn {
+      margin: auto;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      line-height: 20px;
+    }
+
+    #batu {
+      grid-column: 9;
+    }
+
+    #batu:hover {
+      box-shadow: inset 1px 1px 2px var(--graycolor),
+        inset -1px -1px 2px white;
+    }
+
+    #jungyaku {
+      grid-column: 10;
+      transition: 0.5s;
+    }
+
+    #LINK {
+      grid-template-columns: repeat(4, 1fr);
+      gap: calc(var(--inWid)/48);
+      grid-column: 2/24;
+      grid-row: 8/14;
+    }
+
+    #scores {
+      grid-row: 6/7;
+    }
+
+
+    #roleplay {
+      text-align: left;
+      grid-column: 2/9;
+    }
+
+    #letsplay {
+      grid-column: 9/12;
+    }
+
+    #scores {
+      grid-row: 2/3;
+      grid-column: 4/22;
+    }
+
+    #loadingPart {
+      top: calc(var(--inHeight)/2 - var(--inHeight)/48);
+      left: calc(var(--inWid)/2 - var(--inHeight)/48);
+    }
+
+    #loadingPart,
+    .whitebtnLogo {
+      width: calc(var(--inHeight)/24);
+      height: calc(var(--inHeight)/24);
+    }
+
+    #myUL li {
+      margin: 0 calc(var(--inHeight)/48) calc(var(--inHeight)/48) 0;
+      padding: 10px;
+      transition: 0.5s;
+    }
+
+    #myUL li a {
+      margin-bottom: 8px;
+    }
+
+    .radioclass {
+      margin-left: 8px;
+      padding: 0px 5px 1px 5px;
+      width: 27.58px;
+      height: 20.67px;
+    }
+
+    .summaries {
+      margin-top: 5px;
+      padding: 5px 10px 5px 10px;
+    }
+
+    .opValue {
+      padding: 5px 10px;
+      margin: 0 3px 10px 2px;
+    }
+
+    .opValButton {
+      height: 30px;
+      line-height: 30px;
+      margin: 5px 5px 5px 0;
+      padding: 0px 4px;
+      font-size: calc(var(--fontSizeSmall)*0.9);
+    }
+
+    .dateClass,
+    .dateClass button {
+      height: 30px;
+      line-height: 30px;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .dateClass {
+      position: sticky;
+      position: -webkit-sticky;
+      margin-bottom: calc(var(--inWid)/96) !important;
+    }
+
+    .Year {
+      margin-right: calc(var(--inWid)) !important;
+    }
+
+    .Month,
+    .Month button {
+      text-align: right;
+      width: calc(var(--inWid)/24*22 - 20px);
+      z-index: 0 !important;
+    }
+
+    .Year,
+    .Year button {
+      width: calc(var(--inWid)/24*15 - 20px);
+      z-index: 1 !important;
+    }
+
+    .iframeButton {
+      float: right;
+    }
+
+    .options,
+    #searchKakutei,
+    #searchBox,
+    #roleplay,
+    #letsplay,
+    #searchInput {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .options {
+      top: calc(var(--inHeight)/24*17.5);
+      left: calc(var(--inWid)/24*3);
+      width: calc(var(--inWid)/4*3);
+    }
+
+    #midashiS {
+      top: calc(var(--inHeight)/24*18 + 40px);
+      left: calc(var(--inWid)/4);
+      height: calc(var(--inHeight)/72);
+      width: calc(var(--inWid)/24*12);
+      font-size: 0;
+    }
+
+    .midashi {
+      height: calc(var(--inHeight)/72);
+      width: calc(var(--inWid)/24*2);
+    }
+
+    #search {
+      height: calc(var(--inHeight)/24*16);
+      width: calc(var(--inWid)/24*22);
+      overflow: hidden;
+    }
+
+    #searchBox {
+      left: calc(var(--inWid)/12);
+      width: calc(var(--inWid)/24*18);
+    }
+
+    #searchInput {
+      top: 0;
+      width: calc(var(--inWid)/24*14);
+    }
+
+    #searchKakutei {
+      top: 0;
+      left: calc(var(--inWid)/24*15);
+      width: calc(var(--inWid)/24*3);
+    }
+
+    #searchIndex {
+      top: calc(var(--inHeight)/12 + 35px);
+      left: calc(var(--inWid)/12);
+      height: calc(var(--inHeight)/24*14 - 35px);
+      width: calc(var(--inWid)/24*18);
+      padding-top: 5px;
+    }
+
+    #simozimoBox {
+      top: calc(var(--inHeight)/24*17 - 160px);
+      height: 160px;
+      width: calc(var(--inWid)/24*22);
+    }
+
+    #simozimoCancel {
+      float: right;
+      height: 25px;
+      line-height: 25px;
+      width: 25px;
+      margin: 5px;
+    }
+
+    .standfm-embed-iframe {
+      top: -30px;
+      left: calc(var(--inWid)/12 * -2);
+      width: calc(var(--inWid)/24*30 - 30px) !important;
+      height: 222px !important;
+      transform: scale(0.7, 0.7) !important;
+    }
+
+    #toptop {
+      height: calc((var(--inWid) + var(--inHeight)) * 0.075);
+      width: calc((var(--inWid) + var(--inHeight)) * 0.075);
+    }
+
+    #letterPopupBox {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: var(--whitecolor);
+      position: absolute;
+      left: calc(var(--inWid)/24*22 - 40px);
+      top: calc(var(--inHeight)/24*17 - 40px);
+    }
+
+    #letterPopup {
+      position: relative;
+      top: 5px;
+      left: 3px;
+      height: 32px;
+      width: 32px;
+    }
+
+    #letterPopuped {
+      display: none;
+      height: 50px;
+      width: 146px;
+      background-color: var(--whitecolor);
+      position: absolute;
+      left: calc(var(--inWid)/24*22 - 186px);
+      top: calc(var(--inHeight)/24*17 - 90px);
+      border-radius: 10px 10px 0 10px;
+      z-index: 0;
+    }
+
+    #letterPopuped a {
+      display: inline-block;
+      text-align: center;
+      color: var(--blackcolor);
+      z-index: 1;
+      margin: 10px 0 10px 10px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 4px;
+      border-radius: 5px;
+      background-color: var(--offwhitecolor);
+      font-size: var(--fontSizeSmall);
+    }
+
+    .whitebtn {
+      height: calc(var(--inHeight)/10);
+      width: calc((var(--inWid) - var(--inWid)/16)/24*5.5);
+    }
+
+    .whitebtnLogo {
+      padding-top: calc(var(--inHeight)/36);
+    }
+
+    .tiktokLi {
+      text-align: center;
+      display: block;
+      margin-top: 0;
+      background-color: var(--supertrans);
+    }
+
+    .tiktok-embed {
+      border-radius: 5px;
+      padding: 0;
+      margin: 0;
+      transform: scale(0.8, 0.8);
+      top: calc(var(--inHeight)/24* -2);
+      width: calc(var(--inHeight)/24*10);
+      height: calc(var(--inHeight)/24*17);
+    }
+
+
+    .mappp {
+      height: calc(var(--inHeight)/12);
+      width: 100%;
+      margin: 5px 0px;
+    }
+
+    #plusOnebtn {
+      background-color: var(--whitecolor);
+      color: var(--blackcolor);
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    #maps {
+      text-align: center;
+    }
+
+    #maps input {
+      width: 50%;
+      border-radius: 5px;
+      height: 30px;
+      line-height: 30px;
+      margin: 5px 0px;
+      padding-left: 10px;
+    }
+
+    #dartsBtn {
+      margin-left: calc(var(--inWid)/6);
+      color: var(--darkgraycolor);
+    }
+
+    #map1 {
+      height: calc(var(--inHeight)/3);
+    }
+
+    #map2 {
+      height: calc(var(--inHeight)/1.5);
+    }
